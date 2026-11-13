@@ -19,8 +19,8 @@ $num = $_POST['num'];
 function soma($num) {
     $nums = explode(" ", $num);
     global $soma;
-    global $maior = PHP_INT_MIN;
-    global $menor = PHP_INT_MAX;
+    $maior = PHP_INT_MIN;
+    $menor = PHP_INT_MAX;
     foreach($nums as $numes){
         $soma += $numes;
         if($numes > $maior){
@@ -30,9 +30,9 @@ function soma($num) {
             $menor = $numes;
         };
     };
-    echo "Soma: ".$soma;
-    echo "Maior: ".$maior;
-    echo "Menor: ".$menor;
+    echo "Soma: ".$soma."<br>";
+    echo "Maior: ".$maior."<br>";
+    echo "Menor: ".$menor."<br>";
 
 }
 soma($num);
