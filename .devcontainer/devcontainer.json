@@ -11,8 +11,9 @@
   // Configure properties specific to VS Code.
   "vscode": {
     "extensions": [
-      "ikappas.composer"
-    ]
+		"ikappas.composer",
+		"Thomaz.preparing"
+	]
   }
 },
 
