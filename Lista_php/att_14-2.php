@@ -1,4 +1,16 @@
-
+<?php
+session_start();
+if (isset($_POST['sair'])) {
+    session_unset();
+    session_destroy();
+    header("Location: att_14-1.php");
+    exit();
+}
+if (!isset($_SESSION['usuario'])) {
+    header("Location: att_14-1.php");
+    exit();
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,16 +32,3 @@
     </form>
 </body>
 </html>
-<?php
-session_start();
-if (isset($_POST['sair'])) {
-    session_unset();
-    session_destroy();
-    header("Location: att_14-1.php");
-    exit();
-}
-if (!isset($_SESSION['usuario'])) {
-    header("Location: att_14-1.php");
-    exit();
-}
-?>

@@ -1,3 +1,21 @@
+<?php
+session_start();
+if (isset($_SESSION['usuario'])) {
+    header("Location: att_14-2.php");
+    exit();
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['entrar'])) {
+        $usuario = $_POST['usuario'];
+        $senha = $_POST['senha'];
+        if ($usuario == "a" && $senha == "a") {
+            $_SESSION['usuario'] = $usuario;
+            header("Location: att_14-2.php");
+            exit();
+        }
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,21 +37,3 @@
 
 </body>
 </html>
-<?php
-session_start();
-if (isset($_SESSION['usuario'])) {
-    header("Location: att_14-2.php");
-    exit();
-}
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['entrar'])) {
-        $usuario = $_POST['usuario'];
-        $senha = $_POST['senha'];
-        if ($usuario == "a" && $senha == "a") {
-            $_SESSION['usuario'] = $usuario;
-            header("Location: att_14-2.php");
-            exit();
-        }
-    }
-}
-?>
