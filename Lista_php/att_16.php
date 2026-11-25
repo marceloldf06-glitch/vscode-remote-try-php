@@ -72,7 +72,7 @@ try {
     <p>Nenhum usuário cadastrado. A tabela está vazia!</p>
     <?php endif; ?>
     <br>
-    <a href="att_15.php">Voltar para o cadastro</a>
+    <button onclick="window.location.href='att_15.php'">Voltar para o cadastro</button>
     <form method="POST">
     <button type="submit" name="apagar">
         Apagar todos os usuários
