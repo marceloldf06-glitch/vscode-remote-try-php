@@ -8,7 +8,6 @@ apache2ctl start
 mysql --skip-ssl -h 127.0.0.1 -P 3306 -u root -p
 Enter the password:
 
-
-text
 mariadb
 SHOW DATABASES;
+php -S 0.0.0.0:8000
