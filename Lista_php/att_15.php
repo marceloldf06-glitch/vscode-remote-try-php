@@ -1,16 +1,16 @@
 <?php
 
 $host = "mariadb";
-$banco = "cadastro";
+$banco = "mariadb";
 $usuario = "mariadb";
 $senha = "mariadb";
 $mensagem = "";
 try {
     $pdo = new PDO(
-        "mysql:host=$host;charset=utf8mb4",
-        $usuario,
-        $senha
-    );
+    'mysql:host=127.0.0.1;port=3306;dbname=mariadb;charset=utf8mb4',
+    'mariadb',
+    'mariadb'
+);
     $pdo->setAttribute(
         PDO::ATTR_ERRMODE,
         PDO::ERRMODE_EXCEPTION
