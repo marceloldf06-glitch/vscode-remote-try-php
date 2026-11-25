@@ -14,7 +14,8 @@
 		"ikappas.composer"
 	],
       "settings": {
-        "workbench.colorTheme": "NarutoDark"
+        "workbench.colorTheme": "NarutoDark",
+		"window.autoDetectColorScheme": false
 	  }
 	}
 },
