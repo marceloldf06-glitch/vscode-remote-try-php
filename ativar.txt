@@ -11,3 +11,8 @@ Enter the password:
 mariadb
 SHOW DATABASES;
 php -S 0.0.0.0:8000
+
+
+
+
+./iniciar.sh
