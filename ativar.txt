@@ -12,7 +12,6 @@ mariadb
 SHOW DATABASES;
 php -S 0.0.0.0:8000
 
- 
-
+caso não vá automaticamente para fazer tudo isso automaticamente no bash coloque:
 
 ./iniciar.sh
